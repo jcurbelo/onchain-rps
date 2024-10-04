@@ -1,0 +1,26 @@
+{
+  "name": "onchain-rps",
+  "private": true,
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "foundry:up": "curl -L https://foundry.paradigm.xyz | bash && bash $HOME/.foundry/bin/foundryup",
+    "foundry:setup": "(forge --version || pnpm foundry:up)"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@next/eslint-plugin-next": "^14.2.14",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.6",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,10 @@
+[profile.default]
+solc = "0.8.27"
+optimizer = true
+src = "src"
+out = "out"
+libs = ["lib"]
+
+gas_reports = ["*"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
